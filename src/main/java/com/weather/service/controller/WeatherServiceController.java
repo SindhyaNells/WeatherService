@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class WeatherServiceController {
 
-    @RequestMapping(value="/weather/today/{location}",method= RequestMethod.GET)
+    @RequestMapping(value="/weather/current/{location}",method= RequestMethod.GET)
     public CurrentWeather getCurrentWeather(@PathVariable("location") String location){
 
         WeatherDAO weatherDAO=new WeatherDAO();
