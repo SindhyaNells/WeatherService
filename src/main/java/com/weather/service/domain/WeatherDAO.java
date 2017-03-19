@@ -44,7 +44,6 @@ public class WeatherDAO {
 
             forecastWeather =objectMapper.readValue(weatherResponse,WeatherForecast.class);
             objectMapper.configure(SerializationFeature.INDENT_OUTPUT,true);
-            //outputResponse=objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(businessRegion);
 
         } catch (IOException e) {
             e.printStackTrace();
